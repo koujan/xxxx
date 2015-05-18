@@ -92,7 +92,7 @@ The cross indicates, that they have a usage example in this template.
 * [x] newclude
 * [ ] acro
 * [x] hyperref
-* [ ] cleveref
+* [x] cleveref
 * [x] lipsum
 
 
@@ -106,6 +106,7 @@ TODO
 ----
 (Stuff to get done, either in the project or the template, that would depend :))
 
+* [ ] Create a better cleveref example
 * [ ] Task 1
 * [ ] Task 2
 * [ ] Task 3
