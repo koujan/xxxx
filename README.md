@@ -99,8 +99,30 @@ The cross indicates, that they have a usage example in this template.
 ### Procedure
 The master branch should be stay clean. Every conceptual increment (or todo item) should generate an issue. In order to address the issue a branch should be created and worked out. Once the issue is finished the master is checked out and the branch merged. If a issue needs to be reopen the issue is checked out, merged to master and reworked. Consider to open a new issue instead of reopening a previous one when possible.
 
+### LaTeX Copmpilation
+
+* Usual latex run
+
+  ```
+  latex master
+  biber master
+  latex master
+  latex master
+  ```
+
+* Automated compilation with preview (my choice, using *latexmk* and *xelatex*)
+
+  ```
+  latexmk --xelatex -pvc --pdf master.tex
+  ```
+
 ### Important Note:
 Keeping this file updated is important, it can help in further projects.
+
+### Similar Projects:
+
+* https://github.com/asm-products/Dissertate
+* https://github.com/bamos/latex-templates
 
 TODO
 ----
@@ -108,5 +130,6 @@ TODO
 
 * [ ] Create a better cleveref example
 * [ ] Some compilation erros for the nested acronyms
+* [ ] Place a snapshot of each template linking to its *branch*
 * [ ] Task 1
 * [ ] Task 2
