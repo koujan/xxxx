@@ -1,0 +1,30 @@
+%
+% This are some examples using the acro package.
+
+Example showing how plurals are easily handeled:
+\\
+first time: \ac{a} \\
+second time: \ac{a} \\
+short: \acs{a} \\
+alternative: \aca{a} \\
+first again: \acf{a} \\
+long: \acl{a} \\
+short plural: \acsp{a} \\
+long plural: \aclp{a} \\
+
+Here is an example of this \href{}{acro package}
+using nested declarations and macro-acronyms calls, taken from
+\href{http://tex.stackexchange.com/questions/135975/how-to-define-an-acronym-by-using-other-acronym-and-print-the-abbreviations-toge}{stackOverflow}.
+
+\subsubsection*{nested acronyms example 1}
+
+\Ac{dna} is a very important molecule.  The virus xyz contains \dsdna.  Apart
+from that, \dna exists in almost all cells of the body. In most cases it is
+\dsdna.
+
+\subsubsection*{nested acronyms example 2}
+\acresetall
+
+The virus xyz contains \dsdna.  \Ac{dna} is a very important molecule.  Apart
+from that, \dna exists in almost all cells of the body. In most cases it is
+\dsdna.

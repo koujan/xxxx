@@ -90,7 +90,7 @@ The cross indicates, that they have a usage example in this template.
 * [x] [biblatex](http://www.ctan.org/pkg/biblatex) using a biber backend
 * [x] graphicx
 * [x] newclude
-* [ ] acro
+* [x] acro using marcos=true, which allow for \myTriger instead of \ac{myTriger}
 * [x] hyperref
 * [x] cleveref
 * [x] lipsum
@@ -107,8 +107,6 @@ TODO
 (Stuff to get done, either in the project or the template, that would depend :))
 
 * [ ] Create a better cleveref example
+* [ ] Some compilation erros for the nested acronyms
 * [ ] Task 1
 * [ ] Task 2
-* [ ] Task 3
-* [ ] Task 4
-* [ ] Task 5
