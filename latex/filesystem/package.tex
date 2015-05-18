@@ -1,0 +1,31 @@
+%  The following command loads a graphics package to include images
+%  in the document. It may be necessary to specify a DVI driver option,
+%  e.g., [dvips], but that may be inappropriate for some LaTeX
+%  installations.
+\usepackage[]{graphicx}
+
+% In order to include files without having a clear page using \include*,
+% the newclude package is required
+\usepackage{newclude}
+
+% Required for acronyms
+% use \acresetall to reset the acroyms counter
+% macros=True, allows for calling \myTriger rather than \ac{myTriger}
+\usepackage[macros=true]{acro}
+
+% Use biblatex to manage the referencing
+%
+\usepackage[style=authoryear,backend=biber]{biblatex}
+
+% Clever cross referencing. Using cleverref, instead of writting
+% figure~\ref{...} or equation~\ref{...}, only \cref{...} is required.
+% The package interprates the references and introduces the figure, fig.,
+% equation, eq., etc keywords. \Cref forces first letter capital.
+% >> WARNING: This package needs to be loaded after hyperref, math packages,
+%             etc. if used.
+%             Cleveref is recomended to load late
+\usepackage{hyperref}
+\usepackage{cleveref}
+
+% To create random text use lipsum
+\usepackage{lipsum}

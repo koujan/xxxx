@@ -1,0 +1,34 @@
+\documentclass{article}
+%% Latex documents that need direct input
+\input{latex/filesystem/package.tex}        % contains the latex packages
+\input{content/frontmatter.tex}             % contains the Title and Autor info
+\input{latex/filesystem/fileSetup.tex}      % contains package and variables init.
+\input{content/acronym_definition.tex}      % contains the acronims
+
+%% Select inputing only one part of the document
+%\includeonly{content/intro/intro}   % the file wihtout .tex
+%\includeonly{content/other/other_content}
+
+\addbibresource{./content/lit_review.bib}
+\addbibresource{./content/biblatex-examples.bib}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\acresetall  % reset the acronyms from the title (if any)
+\lipsum[1]
+\end{abstract}
+
+%\keywords{KeyWordA, KeyWordB, KeyWordC}
+
+
+%% Incldue the content without .tex extension
+\acresetall  % reset the acronyms from the abstract
+\include*{content/intro/intro}          % the file wihtout .tex
+\include*{content/other/other}
+(easymotion-prefix)
+\printbibliography
+
+\end{document}

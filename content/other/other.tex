@@ -1,0 +1,68 @@
+% includemthe figures path relative to the master file
+\graphicspath{ {./content/other/figures/} }
+
+\section{other}
+\label{sec:other}  % \label{} allows reference to this section
+
+This section is used testing that the packages perform as expected regardless of the template in hand.
+
+\subsection{Citations}
+\label{sec:other:citations}
+\input{./content/other/cite_examples.tex}
+
+
+
+%Here is the text of your introduction using some \ac{a}, referencing some \cref{eq:simple_equation} and citing \cite{Xbook_full}.%\citeauthor{Xbook}.
+%\lipsum[2]
+%
+%\begin{equation}
+%    \label{eq:simple_equation}
+%    \alpha = \sqrt{ \beta }
+%\end{equation}
+%
+%\lipsum[3]
+%
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=3.0in]{fig_1}
+%    \caption{Simulation Results}
+%    \label{fid:simulationfigure}
+%\end{figure}
+%
+%
+%Write your subsection text here\,\cite{Xarticle}.
+
+% \subsection{Subsection testing \emph{acro}}
+% \label{sec:intro:acro}
+% Example showing how plurals are easily handeled:
+% first time: \ac{a} \\
+% second time: \ac{a} \\
+% short: \acs{a} \\
+% alternative: \aca{a} \\
+% first again: \acf{a} \\
+% long: \acl{a} \\
+% short plural: \acsp{a} \\
+% long plural: \aclp{a} \\
+
+% Here is an example of using the package taken from \cite{acro_sOverflow_url}.
+% The example uses nested declarations and calls the acronyms using macros.
+
+% \subsubsection*{nested acronyms example 1}
+
+% \Ac{dna} is a very important molecule.  The virus xyz contains \dsdna.  Apart
+% from that, \dna exists in almost all cells of the body. In most cases it is
+% \dsdna.
+
+% \subsubsection*{nested acronyms example 2}
+% \acresetall
+
+% The virus xyz contains \dsdna.  \Ac{dna} is a very important molecule.  Apart
+% from that, \dna exists in almost all cells of the body. In most cases it is
+% \dsdna.
+
+% Some stuff that emac's colegues use
+%%% Local Variables:
+%%% mode: late
+%%% TeX-master: "../../master.tex"
+%%% End: \section{other}
+

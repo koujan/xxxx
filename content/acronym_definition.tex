@@ -1,0 +1,24 @@
+%% Acronym definition example using glossaries package
+%% \usepackage{acro} is required
+%% 
+%% For a powerful usage of the acro package look at http://tex.stackexchange.com/questions/135975/how-to-define-an-acronym-by-using-other-acronym-and-print-the-abbreviations-toge
+
+\DeclareAcronym{a}{
+  short = ABC,
+  short-plural = AsBC,
+  long = Acronym Beautifuly Crafted,
+  long-plural = Acronyms Beautifuly Crafteds,
+  cite = {acro_man_url}
+}
+
+\DeclareAcronym{dna}{
+  short = DNA ,
+  long = deoxyribonucleic acid
+}
+
+\DeclareAcronym{dsdna}{
+  short = ds\acs*{dna} ,
+  long = double-stranded \acifused{dna}{\acs*{dna}}{\acl*{dna}}
+}
+
+
