@@ -42,7 +42,7 @@ How ?
 -----
 
 ### Structure
-The primary file is called master.tex, and contains the bare essential and the abstract to get an idea of the content at a glance. The content is imported using include and input. Latex packages, acronyms, etc.. are called using input directly meanwhile the chapters (or sections) are called using include. If a chapter source requires from an external file, this is imported using input (in the further included chapter file).
+The primary file is called main.tex, and contains the bare essential and the abstract to get an idea of the content at a glance. The content is imported using include and input. Latex packages, acronyms, etc.. are called using input directly meanwhile the chapters (or sections) are called using include. If a chapter source requires from an external file, this is imported using input (in the further included chapter file).
 
 The document structure is as follows
 ```
@@ -53,7 +53,7 @@ The document structure is as follows
     | |__ % Contains all the info regarding the repository
     |
     |____master.pdf           % document output
-    |____master.tex           % document source
+    |____main.tex           % document source
     |____README.md            % this document you are reading.
     |
     |____content
@@ -113,7 +113,7 @@ The master branch should be stay clean. Every conceptual increment (or todo item
 * Automated compilation with preview (my choice, using *latexmk* and *xelatex*)
 
   ```
-  latexmk --xelatex -pvc --pdf master.tex
+  latexmk --xelatex -pvc --pdf main.tex
   ```
 
 ### Important Note:
